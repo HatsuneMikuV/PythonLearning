@@ -49,9 +49,9 @@ print("hello,"); print("python!")
 # 缩进的空白数量是可变的，但是所有代码块语句必须包含相同的缩进空白数量，这个必须严格执行。
 
 if True:
-    print("True")
+    print "True"
 else:
-    print("False")
+    print "False"
 
 
 # 多行语句
@@ -103,3 +103,6 @@ print("----------------")
 
 # 不换行输出
 print(x, y)
+
+print x,
+print y,

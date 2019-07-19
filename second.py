@@ -1,4 +1,6 @@
-# -*- coding: utf-8 -*-
+#!/usr/bin/python
+# -*- coding: UTF-8 -*-
+
 
 # Python 中文编码
 
@@ -14,7 +16,7 @@ print('100 + 200 =', 100 + 200)
 
 # --------输入
 
-name = input('please enter your name: ')
+name = raw_input('please enter your name: ')
 print('hello,', name)
 
 # --------练习

@@ -90,7 +90,7 @@ def printinfo( name, age ):
     return
 
 
-def printinfodefault( name, age = 35 ):
+def printinfodefault(name, age=35):
 
     print "Name: ", name
     print "Age ", age

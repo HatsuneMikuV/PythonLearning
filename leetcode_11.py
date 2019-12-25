@@ -65,6 +65,26 @@ def isMatch_Fiv(str, pattern):
     else:
         return res and isMatch_Fiv(str[1:], pattern[1:])
 
+def isMatch_Six(str, pattern):
+    memo = dict()  # 备忘录
+
+    def dp(i, j):
+        if (i, j) in memo: return memo[(i, j)]
+        if j == len(pattern): return i == len(str)
+
+        first = i < len(str) and pattern[j] in {str[i], '.'}
+
+        if j <= len(pattern) - 2 and pattern[j + 1] == '*':
+            ans = dp(i, j + 2) or \
+                  first and dp(i + 1, j)
+        else:
+            ans = first and dp(i + 1, j + 1)
+
+        memo[(i, j)] = ans
+        return ans
+
+    return dp(0, 0)
+
 
 
 if __name__ == '__main__':
@@ -89,5 +109,8 @@ if __name__ == '__main__':
 
     res5 = isMatch_Fiv(str, pattern)
     print res5
+
+    res6 = isMatch_Six(str, pattern)
+    print res6
 
     pass

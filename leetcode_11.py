@@ -63,17 +63,17 @@ def isMatch_Fiv(str, pattern):
     if len(pattern) >= 2 and pattern[1] == '*':
         return isMatch_Fiv(str, pattern[2:]) or res and isMatch_Fiv(str[1:], pattern)
     else:
-        return res and isMatch_Thr(str[1:], pattern[1:])
+        return res and isMatch_Fiv(str[1:], pattern[1:])
 
 
 
 if __name__ == '__main__':
 
-    # str = 'mississippi'
-    # pattern = 'mis*is*.p*.'
+    str = 'mississippi'
+    pattern = 'mis*is*.p*.'
 
-    str = 'aab'
-    pattern = 'c*a*b'
+    # str = 'aab'
+    # pattern = 'c*a*b'
 
     res1 = isMatch_One(str, pattern)
     print res1

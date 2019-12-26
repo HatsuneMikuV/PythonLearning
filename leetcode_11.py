@@ -26,10 +26,6 @@ Regular Expression Matching
 
 s 可能为空，且只包含从 a-z 的小写字母。
 p 可能为空，且只包含从 a-z 的小写字母，以及字符 . 和 *。
-
-来源：力扣（LeetCode）
-链接：https://leetcode-cn.com/problems/regular-expression-matching
-著作权归领扣网络所有。商业转载请联系官方授权，非商业转载请注明出处。
 '''
 
 

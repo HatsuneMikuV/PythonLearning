@@ -51,5 +51,6 @@ def romantointeger(s):
 if __name__ == '__main__':
 
     print romantointeger("MMCMXCIV")
+    print romantointeger("IV")
 
     pass
